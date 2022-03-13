@@ -1,0 +1,39 @@
+/* colorlength is 2 
+ note point :: named colors are transform into 
+ respective hex format to avoid color repetition 
+ original colors are below */ 
+
+
+ :root { 
+ 
+  
+  --new_css_color__1: hsla(240, 100%, 50%, 1);
+   /*  2 */
+  --new_css_color__2: hsla(0, 0%, 100%, 1);
+   /*  1 */
+  
+  
+  } 
+  .cmp-page__skiptomaincontent .cmp-page__skiptomaincontent-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999
+  }
+  
+  .cmp-page__skiptomaincontent .cmp-page__skiptomaincontent-link:focus, .cmp-page__skiptomaincontent .cmp-page__skiptomaincontent-link:active {
+    left: 20px;
+    top: 20px;
+    width: auto;
+    height: auto;
+    color: var(--new_css_color__1);
+    background: var(--new_css_color__2);
+    border: 1px solid var(--new_css_color__1);
+    overflow: auto;
+    padding: 10px;
+    margin: 5px;
+    z-index: 999
+  }
